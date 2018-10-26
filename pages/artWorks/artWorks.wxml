@@ -1,0 +1,17 @@
+<!--pages/artWorks/artWorks.wxml-->
+<view class='flex-row-around'>
+  <!-- wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key='ids' -->
+  <!-- <view class='art-works-flex-column' ></view> -->
+
+  <view class='art-works-flex-column' wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13,14]}}" wx:key='ids'>
+    <image class='art-image' mode='aspectFit' src='/images/home/test_pic.png' bindtap='goToDetail'/>
+    <view class='flex-row-1'>
+      <image class='art-image-artist-icon' src='/images/home/test_pic.png' />
+      <view class='flex-column-1 one-line-with-dot'>
+        <text class='artist-name'>Tony</text>
+        <text class='artist-rank'>rank</text>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,63 @@
+/* pages/artWorks/artWorks.wxss */
+
+.art-works-flex-row
+{
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.art-works-flex-column
+{
+  margin-left: 10rpx;
+  margin-top: 30rpx;
+  width: 330rpx;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.art-image
+{
+  width: 330rpx;
+  height: 380rpx;
+  background-color: #eee;
+}
+.art-image-artist-icon
+{
+  margin-left:30rpx;
+  width: 64rpx;
+  height: 64rpx;
+  box-sizing: border-box;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.artist-name
+{
+  color: #333;
+  font-size: 24rpx;
+}
+.artist-rank
+{
+  color: #999;
+  font-size: 22rpx;
+}
+.flex-row-1
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 100rpx;
+  align-items: center;
+}
+.flex-column-1
+{
+  width: 200rpx;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-left: 30rpx;
+}

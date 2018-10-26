@@ -1,0 +1,31 @@
+<view class='container'>
+  <swiper class='swiper-container' indicator-dots="{{false}}" autoplay="true" interval="2000" bindchange='bindSwiperChange'>
+    <block wx:for="{{banner_list}}" wx-for-item="item" wx:key="key">
+      <swiper-item>
+        <view class='swiper-item-container'>
+          <image src="{{item}}" class="swiper-item" />
+          <view class='indicator-view'>
+            {{banner_index}}/{{banner_total}}
+          </view>
+        </view>
+
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='title-name two-line-with-dot PingFangSC-Semibold'>韩后洗护套装</view>
+  <view class='price-item-container'>
+  <text class='price'>3000</text>
+  <text class='price-dan-wei'>美元</text>
+  <text class='info1'>市场价格</text>
+    <view class='origin-price'>
+        <text class='origin-price-text'>￥268</text>
+        <view class='origin-line'></view>
+      </view>
+  </view>
+  <view class='goods-detail-title'>商品详情</view>
+  <view wx:for='{{[1,2,3]}}' wx:key='detail_images'>
+  <image class='detail-image'  src='/images/goodsDetail/banner_test.png' mode='aspectFit'></image>
+  </view>
+  <view style='margin-bottom:100rpx;'></view>
+  <view class='li-ji-dui-huan' bindtap='lijiduihuanClick'>立即兑换</view>
+</view>

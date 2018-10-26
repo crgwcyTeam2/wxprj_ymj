@@ -1,0 +1,101 @@
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+}
+
+.dialog {
+    position: absolute;
+    left: 64rpx;
+    right: 64rpx;
+    top: 400rpx;
+    background: #FAFAFC;
+    border-radius: 10rpx;
+}
+
+.dialog-header {
+    width: 100%;
+    height: 90rpx;
+    text-align: center;
+    font-size: 36rpx;
+    letter-spacing: 0.09px;
+    color: #000;
+    border-bottom: 1rpx solid #C7C6C8;
+    line-height: 90rpx;
+}
+
+.dialog-content {
+    padding: 20rpx 0rpx;
+}
+
+.dialog-content image{
+    width: 72rpx;
+    height: 72rpx;
+    margin-left: 260rpx;
+}
+.content-intro {
+    font-size: 30rpx;
+    color: #000;
+    letter-spacing: 0.08px;
+    padding: 28rpx 0rpx;
+    margin-left: 60rpx;
+    margin-right: 60rpx;
+    line-height: 42rpx;
+    border-bottom: 1rpx solid #C7C6C8;
+    vertical-align: middle;
+}
+
+.content-info {
+    padding: 25rpx 0;
+}
+.dot {
+    display:inline-block;
+    margin-left: 64rpx;
+    background: #888888;
+    width: 10rpx;
+    height: 10rpx;
+    border-radius: 5rpx;
+    vertical-align: middle
+}
+.content-info text {
+    font-size: 30rpx;
+    color: #888888;
+    margin-left: 10rpx;
+}
+
+.phone {
+    font-size: 30rpx;
+    color: #000;
+    margin-left: 64rpx;
+}
+
+.button {
+    height: 89rpx;
+    width: 100%;
+    border-top:1rpx solid #C7C6C8; 
+}
+
+.font-size {
+    font-size: 36rpx;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    flex: 1;
+    padding: 0;
+}
+
+.cancel {
+    color:  #000;
+    border-right: 1rpx solid #C7C6C8;
+    border-radius: 0;
+    position: static;
+}
+
+.save {
+    color: #2CB922;
+    position: static;
+}

@@ -1,0 +1,137 @@
+/* pages/meiyuanMall/meiyuanMall.wxss */
+.head-part-container
+{
+  width: 100%;
+  height: 264rpx;
+  background-color:#d6c2a1;
+}
+.meiyuan-num
+{
+  margin-top:42rpx; 
+  text-align: center;
+  color: #333;
+  font-size: 72rpx;
+}
+.meiyuan-tips-info
+{
+  color: #333;
+  font-size: 24rpx;
+text-align: center;
+}
+.select-item-container
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 28rpx;
+  color: #333;
+}
+.item-text
+{
+  padding:30rpx 0rpx; 
+}
+.item-selected
+{
+  color: #f42c90;
+  border-bottom: 2rpx solid #f42c90;
+}
+.goods-item-container
+{
+  display: flex;
+  width: 100%;
+  height: 200rpx;
+  justify-content: space-between;
+  padding: 0rpx 30rpx;
+  box-sizing: border-box;
+  align-items: center;
+  border-top:10rpx solid #eee; 
+}
+.left-part
+{
+  display: flex;
+}
+.goods-img
+{
+  width: 144rpx;
+  height: 144rpx;
+  background-color:#eee; 
+}
+.goods-info
+{
+  display: flex;
+  flex-direction: column;
+  margin-left:30rpx; 
+}
+.goods-name
+{
+  color: #333;
+  font-size: 32rpx;
+}
+.meiyuan-prex
+{
+  color: #999;
+  font-size:28rpx;
+}
+.meiyuan-price
+{
+  color: #f42c90;
+  font-size: 32rpx;
+}
+
+.goods-tips
+{
+  color: #999;
+  font-size:28rpx;
+}
+.right-arrow
+{
+  width: 16rpx;
+  height: 28rpx;
+}
+.dui-huan-record-container
+{
+  display: flex;
+  flex-direction: column;
+}
+.dui-huan-time-peroid-item
+{
+  color: #999;
+  font-size: 28rpx;
+  background-color: #eee;
+  padding-left: 32rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.dui-huan-record-item
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx 30rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.dui-huan-record-item-left-part
+{
+  display: flex;
+  flex-direction: column;
+}
+.left-content
+{
+  color: #999;
+  font-size: 28rpx;
+}
+.left-content-time
+{
+  margin-top: 10rpx;
+  color: #999;
+  font-size: 20rpx;
+}
+
+.right-content-price
+{
+  color: #f42c90;
+  font-size: 28rpx;
+}

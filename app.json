@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/getPhone/getPhone",    
+    "pages/expressWay/expressWay",
+    "pages/resetMima/resetMima",
+    "pages/home/home",
+    "pages/modifyBindPhone/modifyBindPhone",
+    "pages/address/address",
+    "pages/addressAdd/addressAdd",
+    "pages/orderConfirm/orderConfirm",
+    "pages/consumerDetails/consumerDetails",
+    "pages/jiFenGoodsDetail/jiFenGoodsDetail",
+    "pages/meiyuanMall/meiyuanMall",
+    "pages/personalHome/personalHome",
+    "pages/priceTable/priceTable",
+    "pages/my/my",
+    "pages/orderList/index",
+    "pages/artWorks/artWorks",
+    "pages/artDetail/artDetail",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#e64340",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/nav/home_icon.png",
+        "selectedIconPath": "images/nav/home_icon_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/artWorks/artWorks",
+        "iconPath": "images/nav/art_work_nav.png",
+        "selectedIconPath": "images/nav/art_work_select_nav.png",
+        "text": "作品"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/nav/my_icon.png",
+        "selectedIconPath": "images/nav/my_icon_selected_nav.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

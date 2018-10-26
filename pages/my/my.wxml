@@ -1,0 +1,76 @@
+<!--pages/my/my.wxml-->
+<!-- <text>pages/my/my.wxml</text> -->
+<view class='my-container'>
+
+  <view class='header-container'>
+    <image class='head_icon' src="{{usr_info.avatarUrl}}"></image>
+    <view class='center-part'>
+      <text class='user-name'>{{usr_info.nickName}}</text>
+      <view class='vip'>
+        <text style="margin-left:10rpx;margin-right:20rpx;font-size:20rpx;">7折尊享卡</text>
+      </view>
+    </view>
+    <view class='info_set' bindtap='info_set_click'>Vip储蓄卡</view>
+  </view>
+  <view class='logo-name'>云美集</view>
+  <view class='logo-vip-name'>会员</view>
+  <view class='my-order-container'>
+    <view class='title' bindtap='my_order_item_click'>
+      <text class='my-order'>我的订单</text>
+      <view class='ritht-part'>
+        <text class='see-more'>查看更多</text>
+        <image src='/images/my/right_arrow.png' mode='aspectFit' style='width:10rpx;height:100%;margin-left:10rpx;'></image>
+      </view>
+    </view>
+    <view class='my-order-content'>
+      <view class='my-order-item' bindtap='my_order_item_click'>
+        <image src='/images/my/daifukuan.png' mode='aspectFit' style='width:48rpx;height:48rpx;'></image>
+        <text>待付款</text>
+      </view>
+      <view class='my-order-item' bindtap='my_order_item_click'>
+        <image src='/images/my/daipingjia.png' mode='aspectFit' style='width:48rpx;height:48rpx;'></image>
+        <text>待评价</text>
+      </view>
+      <view class='my-order-item' bindtap='my_order_item_click'>
+        <image src='/images/my/completed.png' mode='aspectFit' style='width:48rpx;height:48rpx;'></image>
+        <text>已完成</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='item-container' style='margin-top:20rpx;' bindtap='addressManageClick'>
+    <view class='left-part'>
+      <image src='/images/my/address_manage_icon.png' mode='aspectFit'></image>
+      <text style='margin-left:20rpx;'>地址管理</text>
+    </view>
+    <image class='right_arrow' mode='aspectFit' src='/images/my/right_arrow.png'></image>
+  </view>
+
+  <view class='item-container' bindtap='meiyuanClick'>
+    <view class='left-part'>
+      <image src='/images/my/jifen.png' mode='aspectFit'></image>
+      <text style='margin-left:20rpx;' >美元</text>
+    </view>
+    <image class='right_arrow' mode='aspectFit' src='/images/my/right_arrow.png'></image>
+  </view>
+
+  <view class='item-container' bindtap='consumerRecordClick'>
+    <view class='left-part'>
+      <image src='/images/my/xiaofeijilu.png' mode='aspectFit'></image>
+      <text style='margin-left:20rpx;'>消费记录</text>
+    </view>
+    <image class='right_arrow' mode='aspectFit' src='/images/my/right_arrow.png'></image>
+  </view>
+
+  <view class='item-container' style='margin-top:20rpx;' bindtap='modify_phone'>
+    <view class='left-part'>
+      <image src='/images/my/modify_phone.png' mode='aspectFit'></image>
+      <text style='margin-left:20rpx;'>修改绑定手机</text>
+    </view>
+    <view style='display:flex;height:100%; align-items:center'>
+      <text class='phone-num'>185****5128</text>
+      <image class='right_arrow' mode='aspectFit' src='/images/my/right_arrow.png'></image>
+    </view>
+
+  </view>
+</view>

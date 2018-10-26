@@ -1,0 +1,21 @@
+        <view class="mask" >
+                <view class="dialog">
+                    <view class="dialog-header PingFangSC-Regular">
+                        <text style="margin-top:12rpx;">微信授权</text>
+                    </view>
+                    <view class="dialog-content full-w">
+                        <image src="{{}}"></image>
+                        <view class="content-intro PingFangSC-Regular">
+                                云美集平台申请获得以下授权：
+                        </view>
+                        <view class="content-info PingFangSC-Regular">
+                            <view class="dot"></view>
+                            <text>获得你的公开信息,头像,昵称。</text>
+                        </view>
+                    </view>
+                    <view class="button flex-row full-w">
+                            <button class="save font-size PingFangSC-Regular"  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">确认授权</button>
+                    </view>
+                </view>               
+        </view>
+     <!-- <view class="cancel font-size PingFangSC-Regular" bindtap="cancel">拒绝</view>  -->

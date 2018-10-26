@@ -1,0 +1,78 @@
+/* pages/artDetail/artDetail.wxss */
+
+.swiper-container
+{
+  width: 100%;
+  height: 863rpx;
+}
+.swiper-item
+{
+  width: 750rpx;
+  height: 863rpx;
+}
+
+.art-image
+{
+  width: 750rpx;
+  height: 863rpx;
+  background-color: #eee;
+}
+.bottom-item-container
+{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 200rpx;
+  padding: 0rpx 30rpx;  
+  align-items: center;
+}
+.flex-row-1
+{
+  width: 400rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.flex-column-1
+{
+  width: 200rpx;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-left: 30rpx;
+}
+
+.lijiyuyue
+{
+  color: #f42c90;
+  border: 2rpx solid #f42c90;
+  border-radius: 6rpx;
+  font-size: 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 0rpx 20rpx;
+}
+
+.art-image-artist-icon
+{
+  width: 124rpx;
+  height: 124rpx;
+  box-sizing: border-box;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.artist-name
+{
+  color: #333;
+  font-size: 24rpx;
+}
+.artist-rank
+{
+  color: #999;
+  font-size: 22rpx;
+}

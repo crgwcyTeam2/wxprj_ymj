@@ -1,0 +1,44 @@
+/* pages/modifyBindPhone/modifyBindPhone.wxss */
+.container
+{
+  position: absolute;
+  height: 100%;
+  background-color: #eee;
+}
+.gap
+{
+  width: 100%;
+  height: 60rpx;
+  background-color: #eee;
+}
+.mima-1
+{
+  background-color: #fff;
+  color: #333;
+  padding-left:36rpx;
+  font-size: 30rpx;
+  width: 100%;
+  height: 100rpx;
+  border-bottom:2rpx solid #eee; 
+}
+.mima-2
+{
+  background-color: #fff;
+  color: #333;
+  padding-left:36rpx;
+  font-size: 30rpx;
+  width: 100%;
+  height: 100rpx;
+  border-bottom:2rpx solid #eee; 
+}
+.confirm-button
+{
+  margin-top:50rpx; 
+  width: 690rpx;
+  margin-left:30rpx; 
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #f42c90;
+  color: #fff;
+  text-align: center;
+}

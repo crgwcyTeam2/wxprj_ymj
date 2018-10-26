@@ -1,0 +1,39 @@
+<!--pages/meiyuanMall/meiyuanMall.wxml-->
+<view class='container'>
+  <view class="head-part-container">
+    <view>
+      <view class='meiyuan-num'>100</view>
+      <view class='meiyuan-tips-info'>当前可用美元</view>
+    </view>
+  </view>
+  <view class='select-item-container'>
+    <view class='item-text {{item_select_index==0 ?"item-selected":""}}' bindtap='meiyuan_dui_huan_click'>美元兑换</view>
+    <view class='item-text {{item_select_index==1 ? "item-selected":""}}' bindtap='meiyuan_dui_huan_record_click'>兑换记录</view>
+  </view>
+  <view hidden='{{item_select_index==0 ? false:true}}'>
+  <view class='goods-item-container' wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key='ids' bindtap='goods_item_click'>
+  <view class='left-part'>
+  <image class='goods-img' src='/images/goodsDetail/banner_test.png'></image>
+  <view class='goods-info'> 
+  <text class='goods-name'>韩后护发素</text>
+<view class='meiyuan-prex'>美元：<text class='meiyuan-price'>500</text></view>
+  <text class='goods-tips'>美元+现金: 不支持</text>
+  </view>
+  </view>
+  <image class='right-arrow' src='/images/home/right_arrow.png'></image>
+  </view>
+  </view>
+  <view   hidden='{{item_select_index==1 ? false:true}}' wx:for='{{[1,2,3,4,5]}}' wx:key='index'>
+  
+  <view class='dui-huan-record-container'>
+  <view class='dui-huan-time-peroid-item'>2018年10月</view>
+  </view>
+  <view class='dui-huan-record-item' wx:for='{{[1,2,3]}}' wx:key='ids'>
+  <view class='dui-huan-record-item-left-part'>
+  <text class='left-content'>兑换一次秀发护理</text>
+  <text class='left-content-time'>2018-10-16 12：30</text>
+  </view>
+  <text class='right-content-price'>-799</text>
+  </view>
+  </view>
+</view>

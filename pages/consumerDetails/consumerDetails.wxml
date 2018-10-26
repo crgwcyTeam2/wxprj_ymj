@@ -1,0 +1,13 @@
+<!--pages/consumerDetails/consumerDetails.wxml-->
+<view class='container'>
+  <view class='search-bg'>
+  <view class='search' bindtap='seachClick'>搜索</view>
+  </view>
+  <view class='consume-record-item' wx:for='{{[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]}}' wx:key='ids'>
+  <view class='record-item-left-part'>
+  <view class='left-content'>染发  <text class='cutter'>发型师：Tony</text></view>
+  <text class='left-content-time'>2018-10-16 12：30  巨匠造型苏州店</text>
+  </view>
+  <text class='right-content-price'>298元</text>
+  </view>
+</view> 

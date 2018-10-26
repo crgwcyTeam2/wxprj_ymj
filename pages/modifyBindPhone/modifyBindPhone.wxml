@@ -1,0 +1,10 @@
+<!--pages/modifyBindPhone/modifyBindPhone.wxml-->
+<view class='container'>
+<view class='gap'>
+    
+</view>
+<input class='mima-1' placeholder="请输入6-10位字符密码" bindinput='bindPhoneNum' type='number' value="{{receiverPhone}}"></input>
+
+<input class='mima-2' placeholder="确认密码" bindinput='bindPhoneNum' type='number' value="{{receiverPhone}}"></input>
+<view class='confirm-button'>完成</view>
+</view>

@@ -1,0 +1,20 @@
+<!-- 首先获取手机号码 -->
+
+<import src="../../template/addressCell/addressCell.wxml"/>
+
+<view class="container no-padding bgGray con-bg">
+        <scroll-view  scroll-y style="height:960rpx;width:100%;">
+                <view class="full-w bgGray flex-col" wx:if="{{cellClass.length != 0}}">
+                        <block wx:for="{{cellClass}}" wx:key="key" wx:for-item="item" >
+                            <template is="addressCell" data="{{item}}"></template>
+                        </block>
+                </view>
+                <view class="none-goods full-w"  wx:else="{{cellClass.length == 0}}">
+                        <image src="https://img.hbunion.com/upload/wx/img/common/none.png">
+                        </image>
+                        <view class="PingFangSC-Light address-font">还没有收货地址哦</view>
+                </view>
+        </scroll-view>
+    <!-- 暂无手机 -->
+    <button class="add-address PingFangSC-Light" bindtap='toAddNewAddressUI' >新增</button>
+</view>

@@ -1,0 +1,100 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class='swiper-container' indicator-dots="true" indicator-color="#BCBCBC" indicator-active-color="#fff" autoplay="true" interval="2000">
+    <block wx:for="{{banner_list}}" wx-for-item="item" wx:key="key">
+      <swiper-item>
+        <image src="{{item}}" class="swiper-item" mode='scaleToFill' bindtap='swiper_item_click' />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='flex-row-between shop-item'>
+    <view class='shop-name PingFangSC-Light'>
+      云美集苏州圆融店
+    </view>
+    <view class='swift-shops PingFangSC-Light PingFangSC-Medium'>切换门店</view>
+  </view>
+  <view class='time-period'>10:00-22:00</view>
+  <view class='detail-address'>苏州市工业园区星湖街128号</view>
+  <view class='flex-row' style='position:relative;height:152rpx;align-items:center;border-bottom:10rpx solid #eee' bindtap='jia_mu_biao_click'>
+    <image class='price-item-icon' mode='aspectFit' src='/images/home/price_item_icon.png'></image>
+    <view class='price-item-content'>
+      <text class='text1'>价目表</text>
+      <text class='text2'>服务与产品</text>
+    </view>
+    <image class='price-item-right-arrow' mode='aspectFit' src='/images/home/right_arrow.png'></image>
+  </view>
+  <view class='shop-artist-title'>门店
+    <text>手艺人</text>
+  </view>
+
+  <scroll-view scroll-x class='art-item-scroll-view'>
+
+    <view class='scroll-view-container'>
+      <view class='artist-item' wx:for='{{artists}}' wx:key='ids' bindtap='artist_item_click'>
+        <image class='artist-icon' src='/images/home/test_pic.png'  ></image>
+        <text class='name one-line-with-dot'>崔总监</text>
+        <text class='rank one-line-with-dot'>剪艺组总监</text>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view hidden='{{true}}'>
+    <view class='shop-artist-title'>活动
+      <text>拼团</text>
+    </view>
+    <scroll-view scroll-x class='huo-dong-ping-tuan-scroll-view'>
+      <view class='scroll-view-container'>
+
+        <view class='pin-tuan-item' wx:for='{{artists}}' wx:key='id'>
+          <image class='goods-img' src=''></image>
+          <text class='goods-title two-line-with-dot'>title</text>
+          <view class='price-item'>
+            <text class='goods-new-price one-line-with-dot'>￥6688</text>
+            <view class='goods-old-price one-line-with-dot'>￥6688
+              <view class='old-price-remove-line'></view>
+            </view>
+          </view>
+          <view class='pin-tuan-button'>qu-pin-tuan</view>
+        </view>
+      </view>
+    </scroll-view>
+
+    <view class='shop-artist-title'>限时
+      <text>秒杀</text>
+    </view>
+    <scroll-view scroll-x class='huo-dong-ping-tuan-scroll-view'>
+      <block wx:for='{{artists}}' wx:key='id'>
+        <view class='pin-tuan-item'>
+          <image class='goods-img' src=''></image>
+          <text class='goods-title two-line-with-dot'>title</text>
+          <view class='price-item'>
+            <text class='goods-new-price one-line-with-dot'>￥6688</text>
+            <view class='goods-old-price one-line-with-dot'>￥6688
+              <view class='old-price-remove-line'></view>
+            </view>
+          </view>
+          <view class='pin-tuan-button'>miao-sha</view>
+        </view>
+      </block>
+    </scroll-view>
+
+    <view class='shop-artist-title'>好友
+      <text>砍价</text>
+    </view>
+    <scroll-view scroll-x class='huo-dong-ping-tuan-scroll-view'>
+      <block wx:for='{{artists}}' wx:key='id'>
+        <view class='pin-tuan-item'>
+          <image class='goods-img' src=''></image>
+          <text class='goods-title two-line-with-dot'>title</text>
+          <view class='price-item'>
+            <text class='goods-new-price one-line-with-dot'>￥6688</text>
+            <view class='goods-old-price one-line-with-dot'>￥6688
+              <view class='old-price-remove-line'></view>
+            </view>
+          </view>
+          <view class='pin-tuan-button'>kan-jia</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

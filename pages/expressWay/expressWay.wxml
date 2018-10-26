@@ -1,0 +1,14 @@
+<!--pages/expressWay/expressWay.wxml-->
+<view class='expressWayContainer'>
+  <view style='background-color:#fff;'>
+    <view class='item-container' bindtap='item_click' data-index='0'>
+      <text>自提</text>
+      <image class='select-icon' src='/images/my/jifen.png'  hidden='{{expressItemSelect==0 ? false:true}}'></image>
+    </view>
+    <view class='item-container' bindtap='item_click' data-index='1'>
+      <text>邮寄</text>
+      <image class='select-icon' src='/images/my/jifen.png' hidden='{{expressItemSelect==1 ? false:true}}'></image>
+
+    </view>
+  </view>
+</view>

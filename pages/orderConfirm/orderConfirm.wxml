@@ -1,0 +1,26 @@
+<!--pages/orderConfirm/orderConfirm.wxml-->
+<view class='contianer'>
+  <view class='express-item'>
+    <text>请选择邮寄或者自提</text>
+    <image class='right-arrow' src='/images/home/right_arrow.png'></image>
+  </view>
+
+  <view class='goods-item'>
+    <view style='display:flex'>
+      <image class='goods-image' src='/images/goodsDetail/banner_test.png'></image>
+      <view style='display:flex;flex-direction:column;'>
+        <text class='goods-name'>韩后洗护用品</text>
+        <view style='display:flex;justify-content: space-between;width:500rpx;'>
+          <text class='goods-price'>500美元</text>
+          <text class='goods-price'>x1</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='confirm-item'>
+  <view style='display:flex;'>
+    合计<text class='price'>500美元</text>
+  </view>
+  <view class='dui-huan' bindtap='dui_huan_click'>兑换</view>
+  </view>
+</view>

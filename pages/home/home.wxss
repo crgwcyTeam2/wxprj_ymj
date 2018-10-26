@@ -1,0 +1,208 @@
+/* pages/home/home.wxss */
+/**index.wxss**/
+.swiper-container
+{
+  width: 100%;
+  height: 420rpx;
+}
+.swiper-item
+{
+  width: 750rpx;
+  height: 420rpx;
+}
+.shop-item
+{
+  padding-top: 20rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.shop-name
+{
+  margin-left: 30rpx;
+  color: #222;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.swift-shops
+{
+  color: #bbb;
+  font-size: 24rpx;
+  padding-right: 62rpx;
+}
+.time-period
+{
+  padding-top:10rpx; 
+  color: #aaa;
+  font-size: 28rpx;
+  padding-left: 68rpx;
+}
+.detail-address
+{
+  padding-top:10rpx; 
+  color: #aaa;
+  font-size: 28rpx;
+  padding-left: 68rpx;
+  padding-bottom: 40rpx;
+  border-bottom: 2rpx solid #e5e5e5
+}
+.price-item-icon
+{
+  width: 88rpx;
+  height: 88rpx;
+  margin-left: 40rpx;
+  border-radius: 50%;
+}
+.price-item-content
+{
+  display: flex;
+  flex-direction: column;
+}
+.price-item-content .text1
+{
+  color: #222;
+  font-size: 30rpx;
+}
+.price-item-content .text2
+{
+  color: #999;
+  font-size: 24rpx;
+}
+.price-item-right-arrow
+{
+  position: absolute;
+  right: 30rpx;
+  width: 18rpx;
+  height: 30rpx;
+}
+.shop-artist-title
+{
+  color: #222;
+  font-size: 30rpx;
+  margin-top:30rpx;
+  margin-left: 30rpx; 
+}
+.shop-artist-title text{
+  color: #f42c90;
+  border-bottom:3rpx solid #f42c90; 
+}
+
+.art-item-scroll-view
+{
+  width: 100%;
+}
+.scroll-view-container
+{
+  margin-top:30rpx; 
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 250rpx;
+}
+.artist-item
+{
+  display: flex;
+  flex-direction: column;
+  width: 120rpx;
+  align-items: center;
+  text-align: center;
+  margin-left: 30rpx;
+}
+.artist-item .artist-icon
+{
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.artist-item .name
+{
+  color: #222;
+  font-size: 28rpx;
+  width: 100rpx;
+}
+
+.artist-item .rank
+{
+  color: #999;
+  font-size: 24rpx;
+  width: 100%;
+  text-align: center;
+}
+.huo-dong-ping-tuan-scroll-view
+{
+  width: 100%;
+  height: 220rpx;
+  background-color: #eee;
+}
+.huo-dong-ping-tuan-scroll-view .scroll-view-container
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500rpx;
+  background-color: #ff0;
+}
+.pin-tuan-item
+{
+  display: flex;
+  flex-direction: column;
+  width: 500rpx;
+}
+ .goods-img 
+{
+  width: 180rpx;
+  height: 180rpx;
+  margin-left: 20rpx;
+  background-color: #f00;
+}
+.ping-tuan-item .goods-title
+{
+  color: #222;
+  font-size: 28rpx;
+  width: 150rpx;
+}
+.ping-tuan-item  .price-item
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.ping-tuan-item .goods-new-price
+{
+  color: #222;
+  font-size: 28rpx;
+  width: 150rpx;
+}
+.ping-tuan-item .goods-old-price
+{
+  color: gray;
+  font-size: 28rpx;
+  width: 150rpx;
+  position: relative;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.ping-tuan-item .old-price-remove-line
+{
+  position: absolute;
+  vertical-align: auto;
+  width: 100%;
+  height: 2rpx;
+  background-color:#999;
+}
+.ping-tuan-item .pin-tuan-button
+{
+  width: 100%;
+  height: 40rpx;
+  background-color: #f42c90;
+  text-align: center;
+}
+::-webkit-scrollbar-thumb
+{
+  background-color:rgba(0,0,0,0.1)
+}
+::-webkit-scrollbar {
+  width: 4rpx;
+  background-color: #eee;
+}
