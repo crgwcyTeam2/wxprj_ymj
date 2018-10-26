@@ -18,6 +18,8 @@
     "pages/artWorks/artWorks",
     "pages/artDetail/artDetail",
     "pages/logs/logs"
+	
+	
   ],
   "window": {
     "backgroundTextStyle": "light",
