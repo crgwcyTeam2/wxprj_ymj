@@ -1,4 +1,6 @@
 // pages/my/my.js
+import util from '../../utils/util.js';
+
 var  app=getApp();
 Page({
 
@@ -70,50 +72,64 @@ Page({
 
   },
   my_order_item_click(){
-    wx.navigateTo({
-      url: '/pages/orderList/index',
-    })
+    if (util.isLoginWithPhone()) {
+        wx.navigateTo({
+        url: '/pages/orderList/index',
+      })
+    }
   },
   meiyuanClick()
   {
-    wx.navigateTo({
-      url: '/pages/meiyuanMall/meiyuanMall',
-    })
+    if (util.isLoginWithPhone()) {
+      wx.navigateTo({
+        url: '/pages/meiyuanMall/meiyuanMall',
+      })
+    }
+
   },
   consumerRecordClick()
   {
-    wx.navigateTo({
-      url: '/pages/consumerDetails/consumerDetails',
-    })
+    if (util.isLoginWithPhone()) {
+      wx.navigateTo({
+        url: '/pages/consumerDetails/consumerDetails',
+      })
+    }
+
   },
   addressManageClick()
   {
-    wx.navigateTo({
-      url: '/pages/address/address',
-    })
+    if (util.isLoginWithPhone()) {
+      wx.navigateTo({
+        url: '/pages/address/address',
+      })
+    }
+ 
   },
   modify_phone()
   {
-    wx.navigateTo({
-      url: '/pages/modifyBindPhone/modifyBindPhone',
-    })
+    if (util.isLoginWithPhone()) {
+      wx.navigateTo({
+        url: '/pages/modifyBindPhone/modifyBindPhone',
+      })
+    }
+
   },
-  requestAction() {
-    wx.showLoading({
-      title: '加载中...'
-    });
-    let param = {};
-   // let date = new Date();
-   // + '?_t=' + date.getTime()
-    let url = api.urlString.personalCenter;
-    let that = this;
-    req.Post(url, param, function success(res) {
-       wx.hideLoading();
-      that.data.phoneCallMsg.content = res.data.bsetPhone;
-      that.setData({
-        dataObj: res.data,
-        phoneCallMsg: that.data.phoneCallMsg
-      });
-    });
-  },
+
+
+  // requestAction() {
+  //   wx.showLoading({
+  //     title: '加载中...'
+  //   });
+  //   let param = {};
+  //   let url = api.urlString.personalCenter;
+  //   let that = this;
+  //   req.Post(url, param, function success(res) {
+  //      wx.hideLoading();
+  //     that.data.phoneCallMsg.content = res.data.bsetPhone;
+  //     that.setData({
+  //       dataObj: res.data,
+  //       phoneCallMsg: that.data.phoneCallMsg
+  //     });
+  //   });
+  // },
 })

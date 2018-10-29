@@ -125,5 +125,33 @@ Page({
     wx.navigateTo({
       url: '/pages/personalHome/personalHome',
     })
+  },
+
+  reqHomeStoreList() {
+    let url = api.urlString.homeStoreList;
+    wx.showLoading({
+      title: 'loading'
+    });
+    let param = {
+    };
+    req.Post(url, param, function success(res) {
+      wx.hideLoading();
+      console.log('xxxxxxxxxxxxxxxxxreqHomeStoreList  sucess res=', res);
+    });
+  },
+
+  reqHomeStoreInfo(storeId)
+  {
+    let url = api.urlString.homeStorePageInfo + storeId;
+    wx.showLoading({
+      title: 'loading'
+    });
+    let param = {
+      id:storeId
+    };
+    req.Post(url, param, function success(res) {
+      wx.hideLoading();
+      console.log('xxxxxxxxxxxxxxxxxreqreqHomeStoreInfo  sucess res=', res);
+    });
   }
 })

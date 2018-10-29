@@ -1,12 +1,13 @@
+import req from "../../utils/request.js";
+import api from "../../utils/api.js";
+var that;
 
 Page({
     data: {
         openType: 0,
         hasPhone: true,
-      cellClass: [{ receiverName: '小崔', receiverPhone: '188****8765', area: '江苏省苏州市姑苏区', address: '乐桥888号',isDefault:0}],
+        cellClass: [{ receiverName: '小崔', receiverPhone: '188****8765', area: '江苏省苏州市姑苏区', address: '乐桥888号',isDefault:0}],
         isFromGoodsDetail: false,
-    
-
         disTouch:false
     },
 
@@ -50,25 +51,6 @@ Page({
             verificationPhone: true
         })
     },
-
-    // 获取收货地址
-    reqReceivingAddress(data) {
-        // var that = this;
-        // let param = {};
-        // req.Post(url.urlString.customerAddress, param, function Success(res) {
-        //     console.log(res);
-        //     if (res.code == 0) {
-        //         that.setData({
-        //             cellClass: res.data.list
-        //         })
-        //     } else {
-        //         wx.showToast({
-        //             title: res.message,
-        //         });
-        //     }
-        // });
-    },
-
     // 添加收货地址
     toAddNewAddressUI() 
     {
@@ -78,6 +60,7 @@ Page({
     },
 
     onLoad: function (options) {
+      that=this;
       if (options.isFromGoodsDetail!=undefined)
       {
         this.setData({
@@ -90,18 +73,49 @@ Page({
     },
     onShow: function () {
         //Do some when page show.
-        this.reqReceivingAddress();
+        //?id=？
+        this.reqReceivingAddress(0);
     },
     onHide: function () {
         //Do some when page hide.
-
     },
     onUnload: function () {
         //Do some when page unload.
-
     },
     onPullDownRefresh: function () {
         //Do some when page pull down.
+    },
 
-    }
+  // 获取收货地址
+  reqReceivingAddress(userId) {
+    let url = api.urlString.queryUserAddress + userId;
+    console.log('xxxxxxxxxxxxxxxxxreqReceivingAddress  url=', url);
+    wx.showLoading({
+      title: 'loading'
+    });
+    let param = {
+      //"isDebug": "false",
+    };
+    req.reqGet(url, param, function success(res) {
+      wx.hideLoading();
+      console.log('xxxxxxxxxxxxxxxxxreqReceivingAddress  sucess res=', res);
+    });
+  },
+  // 删除地址
+  reqDeleteAddress() {
+    let url = api.urlString.deleteAddress;
+    wx.showLoading({
+      title: 'loading'
+    });
+    let param = {
+      //"isDebug": "false",
+      "addressId": 0,
+      "userId": ""
+    };
+    req.Post(url, param, function success(res) {
+      wx.hideLoading();
+      console.log('xxxxxxxxxxxxxxxxxreqDeleteAddress  sucess res=', res);
+    });
+  },
+
 })

@@ -30,10 +30,9 @@ function reqGet (url,param,onSuccess,onfail){
 
 };
 
-// 封装Post请求方法
 
 function req(url,param,token,method,onSuccess,onfail){
-    console.log('param:*****', param);
+    console.log(' req param:', param);
     wx.request({
         url:url,
         header:{
@@ -44,7 +43,7 @@ function req(url,param,token,method,onSuccess,onfail){
         method:method,
         success:function(res){
             console.log('request success===',res);
-            if (res.data.code == 0) {
+            if (res.data.status == 0) {
                 onSuccess(res.data);
             } else {
                 wx.showToast(
@@ -71,6 +70,7 @@ function req(url,param,token,method,onSuccess,onfail){
         },
     })
 }
+// 封装Post请求方法
 
 
 const Post = function (url,param,onSuccess,onfail){

@@ -1,0 +1,23 @@
+<view class="login-mask">
+        <view class="login-bind full-w">
+        <view hidden='{{true}}'>
+            <view class="full-w bind-input-view">
+                <view class="login-bind-content PingFangSC-Regular full-w login-bind-cell" >
+                    <input type="text" placeholder="输入手机号" placeholder-class="place-class" class="input-common" bindinput="bindKeyInput"/>
+                </view>
+                <view class="get-msg PingFangSC-Regular flex-row login-bind-cell">
+                    <input type="text" placeholder="输入验证码"  placeholder-class="place-class" class="input-common" bindinput="bindKeyVetify"/>
+                    <view class="get-msg-btn  flex1" bindtap="getMsgCode">
+                        <view class="get-msg-line  PingFangSC-Regular">{{intro}}</view>
+                    </view>
+                </view>
+            </view>
+                      
+            <view class="sure-btn  PingFangSC-Regular btn-common" bindtap="onloadPhone">登录</view> 
+            </view>
+            <button class="login-weixin  PingFangSC-Regular btn-common"  open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+                <image src="https://img.hbunion.com/upload/wx/img/customer/weixin.png"></image>
+                微信快速登录
+            </button> 
+        </view>               
+</view>

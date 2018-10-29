@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/address/address",
+    "pages/login/login",
     "pages/getPhone/getPhone",    
     "pages/expressWay/expressWay",
     "pages/resetMima/resetMima",
     "pages/home/home",
     "pages/modifyBindPhone/modifyBindPhone",
-    "pages/address/address",
     "pages/addressAdd/addressAdd",
     "pages/orderConfirm/orderConfirm",
     "pages/consumerDetails/consumerDetails",
@@ -18,8 +19,6 @@
     "pages/artWorks/artWorks",
     "pages/artDetail/artDetail",
     "pages/logs/logs"
-	
-	
   ],
   "window": {
     "backgroundTextStyle": "light",

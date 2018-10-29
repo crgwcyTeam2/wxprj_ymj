@@ -1,6 +1,6 @@
 import addressTree from "../../utils/address_tree2.js";
-// import req from "../../utils/request.js";
-// import api from "../../utils/api.js";
+import req from "../../utils/request.js";
+import api from "../../utils/api.js";
 // import utils from "../../utils/util.js";
 
 Page({
@@ -198,7 +198,7 @@ Page({
     let addressArray = this.data.addressArray;
     let cityArray = [];
     let districtArray = [];
-    // console.log('xxxxxxxxxxxxxx',val[0],val[1],val[2]);
+    //console.log('xxxxxxxxxxxxxx',val[0],val[1],val[2]);
     let pickerViewSelectValue;
     if (this.data.oldpovinceIndex != val[0]) {
       this.data.oldpovinceIndex = val[0];
@@ -324,8 +324,57 @@ Page({
     } else {
       return false
     }
+  },
+  // 保存地址
+  reqSaveAddress() 
+  {
+    let url = api.urlString.saveAddress;
+    wx.showLoading({
+      title: 'loading'
+    });
+    let param = {
+      "address": "",
+      "addressLabel": 0,
+      "gender": 0,
+      "id": 0,
+      "isDefault": 0,
+      "latitude": "",
+      "locationAddress": "",
+      "longitude": "",
+      "phone": "",
+      "receiver": "",
+      "userId": ""
+    };
+    req.Post(url, param, function success(res) {
+      wx.hideLoading();
+      console.log('xxxxxxxxxxxxxxxxxreqSaveAddress  sucess res=', res);
+    });
+  },
 
-  }
+  // 更新地址信息
+  reqUpdateAddress() {
+    let url = api.urlString.updateAddressInfo;
+    wx.showLoading({
+      title: 'loading'
+    });
+    let param = {
+      "address": "",
+      "addressLabel": 0,
+      "gender": 0,
+      "id": 0,
+      "isDefault": 0,
+      "latitude": "",
+      "locationAddress": "",
+      "longitude": "",
+      "phone": "",
+      "receiver": "",
+      "userId": ""
+    };
+    req.Post(url, param, function success(res) {
+      wx.hideLoading();
+      console.log('xxxxxxxxxxxxxxxxxreqUpdateAddress  sucess res=', res);
+    });
+  },
 
 
 })
