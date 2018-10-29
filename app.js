@@ -161,15 +161,12 @@ App({
     themeColor: '#4e394a',
     ispersonal: true, //个人
     myBusinessCard:'',//名片信息
+    merchantId:1,
     memberDefaultCardId:'',//名片id
     memberCompanyId: '',//绑定的公司id
     memberCompanyUserRole: '', //0-普通员工, 1-超级管理员，2-管理员
     userurl: 'http://47.93.205.72:8080',
     uploadFileurl:'https://test-api-minapp-tuiing.anmav.cn/',
     appId:'wx1d09378c5ebca84d'
-    //userurl: 'https://uat-api-minapp-tuiing.anmav.cn/app/',
-    //uploadFileurl: 'https://uat-api-minapp-tuiing.anmav.cn/'
-    //userurl: 'https://api-minapp-tuiing.anmav.cn/app/',
-    //uploadFileurl: 'https://api-minapp-tuiing.anmav.cn/'
   }
 })

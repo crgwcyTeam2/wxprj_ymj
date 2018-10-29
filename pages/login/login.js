@@ -88,7 +88,7 @@ Page({
       "encryptedData": encryptedData,
       "iv": iv,
       "openId": app.globalData.openId,
-      "storeId": 0
+      "storeId": 1
     };
 
     req.Post(url, param, function success(res) {

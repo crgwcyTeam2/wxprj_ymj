@@ -7,10 +7,9 @@ const key = "123456";//函百规定的Key
 //const base_Url = "http://192.168.18.149:8080/app/";//方永杰
 //const base_Url = "http://192.168.18.153:8088/mobile/";//李旺
 //const base_Url = "http://73c1eebd.ngrok.io/mobile/";//李旺
-
 // 封装get请求方式
 function reqGet (url,param,onSuccess,onfail){
-    let appendUrl = base_Url + url + '.htm';
+    let appendUrl = base_Url + url;
     // let md5Str = paramOperation(param);
     var token = '';
     wx.getStorage({
@@ -31,18 +30,20 @@ function reqGet (url,param,onSuccess,onfail){
 };
 
 
+
 function req(url,param,token,method,onSuccess,onfail){
     console.log(' req param:', param);
     wx.request({
         url:url,
         header:{
           'Content-Type':"application/json",
-            'token':token
+          // 'token': app.globalData.token
+          // 'x-merchantId': app.globalData.merchantId
         },
         data:param,
         method:method,
         success:function(res){
-            console.log('request success===',res);
+       //     console.log('request success===',res);
             if (res.data.status == 0) {
                 onSuccess(res.data);
             } else {

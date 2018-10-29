@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/address/address",
     "pages/login/login",
+    "pages/address/address",
     "pages/getPhone/getPhone",    
     "pages/expressWay/expressWay",
     "pages/resetMima/resetMima",
